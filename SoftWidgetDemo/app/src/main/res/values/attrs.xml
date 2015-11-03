@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- softView（提前绘制View）自定义属性    for 李兆轩  2015.8.12-->
+    <!-- SRoundRect_Button 圆角矩形Button 有边框-->
+    <declare-styleable name="SRoundRect_Button">
+        <attr name="android:text" />
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="android:alpha"/>
+        <attr name="backgroundPic" format="reference"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="border" format="boolean"/>
+        <attr name="corners" format="integer"/>
+    </declare-styleable>
+    <!-- SRoundRect_LinearLayout 圆角矩形Layout-->
+    <declare-styleable name="SRoundRect_LinearLayout">
+        <attr name="bgcolor" format="color"/>
+    </declare-styleable>
+    <!-- Image_EditText 带图片的输入框-->
+    <declare-styleable name="NoDataTipsView">
+        <attr name="android:text" />
+        <attr name="android:src" />
+    </declare-styleable>
+
+
+</resources>

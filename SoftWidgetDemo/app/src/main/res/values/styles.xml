@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowBackground">@drawable/other_bg</item> -->
+    </style>
+
+    <!-- Activity Theme -->
+    <style name="NoAactionBar" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@drawable/bg_login</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+</resources>

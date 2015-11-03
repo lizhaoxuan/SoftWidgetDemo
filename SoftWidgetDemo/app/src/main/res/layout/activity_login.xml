@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo"/>
+
+    <com.example.zhaoxuanli.softwidgetdemo.soft.widget.SRoundRect_LinearLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/logoView"
+        android:orientation="horizontal"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="8dip"
+        app:bgcolor="#CFCFCF">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:paddingBottom="6dip"
+            android:src="@drawable/ic_login_user" />
+
+        <EditText
+            android:id="@+id/accountEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="\@0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,_-"
+            android:hint="账号"
+            android:imeOptions="actionNext"
+            android:paddingBottom="8dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null" />
+    </com.example.zhaoxuanli.softwidgetdemo.soft.widget.SRoundRect_LinearLayout>
+
+    <com.example.zhaoxuanli.softwidgetdemo.soft.widget.SRoundRect_LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/accountLayout"
+        android:orientation="horizontal"
+        android:paddingLeft="6dip"
+        android:paddingRight="6dip"
+        android:paddingTop="8dip"
+        app:bgcolor="#CFCFCF">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:paddingBottom="6dip"
+            android:src="@drawable/ic_login_password" />
+
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dip"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="\@0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.,_-"
+            android:hint="密码"
+            android:imeOptions="actionNext"
+            android:paddingBottom="8dip"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"/>
+    </com.example.zhaoxuanli.softwidgetdemo.soft.widget.SRoundRect_LinearLayout>
+
+    <com.example.zhaoxuanli.softwidgetdemo.soft.widget.SRoundRect_Button
+        android:id="@+id/login_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/passwordLayout"
+        android:layout_alignLeft="@id/passwordLayout"
+        android:layout_alignRight="@id/passwordLayout"
+        android:layout_gravity="center"
+        android:text="登录"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:backgroundColor="#af0308"/>
+
+
+    <TextView
+        android:id="@+id/forgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textColor="#af0308"
+        android:textSize="15sp"
+        android:text="忘记密码"/>
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textColor="#af0308"
+        android:textSize="15sp"
+        android:text="注册"/>
+</RelativeLayout>
