@@ -18,9 +18,9 @@ public class PaintBox {
 
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStyle(Paint.Style.FILL);
-        //paint.setAntiAlias(true);
+        paint.setAntiAlias(true);
         paint.setColor(color);
-        //paint.setAlpha(alpha);
+        paint.setAlpha(alpha);
         canvas.drawRoundRect(canvas.getRectF(), 20, 20, paint);
 
         
@@ -39,11 +39,11 @@ public class PaintBox {
             paint.setStyle(Paint.Style.FILL);
             paint.setAntiAlias(true);
             paint.setColor(color);
-            //paint.setAlpha(40);
+            paint.setAlpha(30);
             canvas.drawRoundRect(canvas.getRectF(), 20, 20, paint);
 
             paint.setStyle(Paint.Style.STROKE);
-            //paint.setAlpha(70);
+            paint.setAlpha(70);
             paint.setStrokeWidth(4);
             canvas.drawRoundRect(canvas.getRectF(),20,20,paint);
         }else{
@@ -53,11 +53,16 @@ public class PaintBox {
 
     }
 
+    /**
+     * 填充颜色
+     * @param canvas
+     * @param color
+     */
     public static void drawColor(DrawingCanvas canvas ,int color ){
         Paint paint = new Paint();
         paint.setAntiAlias(true);
-        //paint.setFilterBitmap(true);
-        //paint.setDither(true);
+        paint.setFilterBitmap(true);
+        paint.setDither(true);
         paint.setColor(color);
         canvas.drawPaint(paint);
     }
